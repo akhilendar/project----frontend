@@ -40,9 +40,9 @@ const App: React.FC = () => {
         dispatch(removeTodo({ id: deleteTodoId }));
       } catch (error) {
         if (error instanceof Error) {
-          console.error('Error deleting todo:', error.message);
+          console.error('Error deleting todos:', error.message);
         } else {
-          console.error('Unknown error:', error);
+          console.error('Unknown errors:', error);
         }
       }
       setDeleteTodoId(null);
